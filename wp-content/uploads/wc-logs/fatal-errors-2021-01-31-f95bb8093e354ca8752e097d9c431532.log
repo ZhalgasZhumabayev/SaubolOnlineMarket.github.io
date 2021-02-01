@@ -2,3 +2,22 @@
 
 2021-01-31T20:16:38+00:00 CRITICAL Out of memory (allocated 14680064) (tried to allocate 163840 bytes) в D:\Programs\XamppNew\htdocs\saubol\wp-includes\pomo\mo.php на строке 297
 
+2021-01-31T21:11:28+00:00 CRITICAL Uncaught TypeError: method_exists(): Argument #1 ($object_or_class) must be of type object|string, bool given in D:\Programs\XamppNew\htdocs\saubol\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\PageController.php:359
+Stack trace:
+#0 D:\Programs\XamppNew\htdocs\saubol\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\PageController.php(359): method_exists(false, 'is_block_editor')
+#1 D:\Programs\XamppNew\htdocs\saubol\wp-content\plugins\woocommerce\packages\woocommerce-admin\includes\page-controller-functions.php(40): Automattic\WooCommerce\Admin\PageController->is_connected_page()
+#2 D:\Programs\XamppNew\htdocs\saubol\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Loader.php(798): wc_admin_is_connected_page()
+#3 D:\Programs\XamppNew\htdocs\saubol\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Loader.php(782): Automattic\WooCommerce\Admin\Loader::is_embed_page()
+#4 D:\Programs\XamppNew\htdocs\saubol\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Loader.php(909): Automattic\WooCommerce\Admin\Loader::is_admin_or_embed_page()
+#5 D:\Programs\XamppNew\htdocs\saubol\wp-includes\class-wp-hook.php(287): Automattic\WooCommerce\Admin\Loader::remove_notices('')
+#6 D:\Programs\XamppNew\htdocs\saubol\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#7 D:\Programs\XamppNew\htdocs\saubol\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#8 D:\Programs\XamppNew\htdocs\saubol\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\includes\class-wcpdf-setup-wizard.php(132): do_action('admin_head')
+#9 D:\Programs\XamppNew\htdocs\saubol\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\includes\class-wcpdf-setup-wizard.php(111): WPO\WC\PDF_Invoices\Setup_Wizard->setup_wizard_header()
+#10 D:\Programs\XamppNew\htdocs\saubol\wp-includes\class-wp-hook.php(287): WPO\WC\PDF_Invoices\Setup_Wizard->setup_wizard('')
+#11 D:\Programs\XamppNew\htdocs\saubol\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#12 D:\Programs\XamppNew\htdocs\saubol\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#13 D:\Programs\XamppNew\htdocs\saubol\wp-admin\admin.php(175): do_action('admin_init')
+#14 {main}
+  thrown в D:\Programs\XamppNew\htdocs\saubol\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\PageController.php на строке 359
+
